@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  Tomato
+//
+//  Created by HeQingshan－Air on 15/2/8.
+//  Copyright (c) 2015年 HQS. All rights reserved.
+//
+
+#ifndef Tomato_PrefixHeader_pch
+#define Tomato_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/*
+ 注意事项：这里包含的所有头文件必须是不经常变动的。比如可以包含系统的头文件、库文件和已经确定的工具头文件等。
+ 一旦该文件进行修改，或者包含的文件进行修改，必然会导致整个工程的全部重新编译，严重影响开发速度。
+ */
+
+//EGOTableViewPullRefresh相关
+#import "EGOTableView.h"
+
+//项目Macro相关
+#import "Macro.h"
+
+//加载动画
+#import "MBProgressHUD.h"
+
+//协议头文件
+#import "Categories.h"
+
+//工具头文件
+#import "Utils.h"
+
+//Libs相关
+#import "Libs.h"
+
+//Views相关
+#import "Views.h"
+
+//UtilsViews相关
+#import "UtilsViews.h"
+
+#endif

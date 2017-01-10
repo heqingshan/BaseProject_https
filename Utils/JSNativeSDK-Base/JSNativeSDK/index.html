@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://localhost:8080/jsandroid/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store,no-cache"> 
+<meta name="Handheldfriendly" content="true">
+<meta name="viewport" content="width=100%; initial-scale=1.0; user-scalable=yes">
+<meta name="robots" content="all">
+<meta name="keywords" contect="doodle, mobile, doodlemobile, game, games">
+<meta name="description" content="Make People&#39;s Mobile Life More Connected Through Games.">
+
+<title>jsandroid_test</title>
+
+<script type="text/javascript" language="javascript"> 
+	
+	function showHtmlcallJava(){
+		var str = window.jsObj.HtmlcallJava();
+		alert(str);
+	}
+
+    function config()
+    {
+        window.mtime.config(true);
+        alert("config is ok!");
+    }
+
+
+	function showVersion(){
+		var str =window.mtime.checkVer();
+		alert(str);
+	}
+	
+	function showHtmlcallJava2(){
+		var str = window.jsObj.HtmlcallJava2("IT-homer blog");
+		alert(str);
+	}
+
+	function chooseImage(){
+		 window.mtime.chooseImage("{\"count\":1,\"uploadType\":2,\"token\":\"token\",\"callbackName\":\"uploadCallback\",\"imageFileType\":\"jpg\"}");
+	}
+
+    function payWeChat(){
+        window.uteam.payWeChat("{\"orderNumber\":\"1234556\"}");
+    }
+
+	function showFromHtml(){
+		document.getElementById("id_input").value = "Java call Html";
+	}
+	
+	function showFromHtml2( param ){
+		document.getElementById("id_input2").value = "Java call Html : " + param; 
+	}
+
+
+
+
+
+function uploadCallback(result) {
+setTimeout(function() {
+           
+           if (result.success == undefined || result.success == null || !result.success)
+           {
+                alert('call failed');
+           }
+           else
+           {
+                if (result.errMsg != undefined && result.errMsg != null && result.errMsg != "")
+                {
+                    alert(result.errMsg);
+                }
+                else if (result.data != undefined && result.data != null)
+                {
+                    var dataArr = result.data.resultChooiceImage;
+                    for (var i = 0; i < dataArr.length; i++)
+                    {
+                        var alertIndex = i + 1;
+                        alert(alertIndex + ':' +dataArr[i]);
+                        var dataTxt = dataArr[i];
+                        for (x in dataTxt)
+                        {
+                            alert(x + ':' + dataTxt[x]);
+                        }
+                    }
+                }
+                else
+                {
+                    alert(result.data);
+                }
+           }
+           }, 1);
+           return "success";
+}
+</script>
+
+
+</head>
+
+
+<body>
+
+hello IT-homer
+
+<br>
+<br>
+<br>
+
+<input type="button" value="HtmlcallJava" onclick="showHtmlcallJava()" />
+
+<br>
+
+<input type="button" value="HtmlcallJava2" onclick="showHtmlcallJava2()" />
+
+<br>
+<input type="button" value="version" onclick="showVersion()" />
+<br>
+<input type="button" value="chooiceImage" onclick="chooseImage()" />
+<br>
+<input type="button" value="uploadImage" onclick="uploadImage()" />
+<br>
+<input type="button" value="debug" onclick="config()" />
+<br>
+<br>
+<input id="id_input" style="width: 90%" type="text" value="null" />
+<br>
+<input type="button" value="JavacallHtml" onclick="window.jsObj.JavacallHtml()" />
+
+<br>
+<br>
+<br>
+
+<input id="id_input2" style="width: 90%" type="text" value="null" />
+<br>
+<input type="button" value="JavacallHtml2" onclick="window.jsObj.JavacallHtml2()" />
+
+</body>
+
+
+</html>
+

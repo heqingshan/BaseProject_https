@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a4fc1b93-3c7f-534c-9e4e-1708c103f05b",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a4fc1b93-3c7f-534c-9e4e-1708c103f05b" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a4fc1b93-3c7f-534c-9e4e-1708c103f05b" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "56D2140D-CC4B-4DD6-94CF-6CC810ABB607",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a4fc1b93-3c7f-534c-9e4e-1708c103f05b" : "UTeam\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaseProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Code\/tomato\/trunk\/BaseProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/115.28.56.109\/svn\/UTeamSvn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a4fc1b93-3c7f-534c-9e4e-1708c103f05b"
+    }
+  ]
+}
